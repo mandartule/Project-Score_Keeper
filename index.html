@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreKeeper</title>
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .looser {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-mobile">
+                <div class="column is-half is-offset-one-quarter">
+
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src=https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title is-size-6">
+                                Ping Pong Score Keeper
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="title is-1">
+                                    <span id="p1Dis">0</span> to <span id="p2Dis">0</span>
+                                </div>
+                                <div class="subtitle">Use the buttons below to keep score</div>
+                                <label for="upto" class="label is-large is-inline">Playing To</label>
+                                <div class="select is-rounded">
+                                    <select id="upTo">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                  </div>
+                            </div>
+
+                        </div>
+                        <footer class="card-footer">
+                            <button id="button1" class="button is-primary card-footer-item is-large">+1 Player One</button>
+                            <button id="button2" class="button is-info is-large card-footer-item">+1 Player Two</button>
+                            <button id="reset" class="button is-danger is-large card-footer-item">Reset</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="app.js"></script>
+</body>
+
+</html>
